@@ -1,4 +1,4 @@
-#include"smart_array .h"
+п»ї#include"smart_array .h"
 
 smart_array::smart_array(size_t size)
 {
@@ -16,7 +16,7 @@ smart_array::~smart_array()
 void smart_array::add_element(const int number)
 {
 	if (count_el == size)
-		throw std::length_error("Попытка превысить длинну");
+		throw std::length_error("РџРѕРїС‹С‚РєР° РїСЂРµРІС‹СЃРёС‚СЊ РґР»РёРЅРЅСѓ");
 	arr[count_el] = number;
 	count_el++;
 }
@@ -24,10 +24,11 @@ void smart_array::add_element(const int number)
 int smart_array::get_element(const int index) const 
 {
 	if (0 > index || size < index)
-		throw std::out_of_range("Выход за пределы диапозона");
+		throw std::out_of_range("Р’С‹С…РѕРґ Р·Р° РїСЂРµРґРµР»С‹ РґРёР°РїРѕР·РѕРЅР°");
 	if (count_el == index)
-		throw std::out_of_range("Попытка получить неинициализированное значение");
+		throw std::out_of_range("РџРѕРїС‹С‚РєР° РїРѕР»СѓС‡РёС‚СЊ РЅРµРёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ");
 	return arr[index];
+
 }
 
 size_t smart_array::GetSize() const
