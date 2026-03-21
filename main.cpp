@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 #include"smart_array .h"
 
 static void Print(smart_array& arr)
@@ -45,8 +45,6 @@ int main()
 
 		std::cout << std::endl;
 
-		arr.add_element(100);
-		Print(arr);
 	}
 	catch (const std::exception& ex) {
 		std::cout << ex.what() << std::endl;
