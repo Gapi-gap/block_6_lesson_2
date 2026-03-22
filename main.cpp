@@ -1,5 +1,5 @@
-﻿#include<iostream>
-#include"smart_array .h"
+﻿#include <iostream>
+#include "smart_array.h"
 
 static void Print(smart_array& arr)
 {

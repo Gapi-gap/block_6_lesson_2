@@ -124,10 +124,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="smart_array .cpp" />
+    <ClCompile Include="smart_array.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="smart_array .h" />
+    <ClInclude Include="smart_array.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
